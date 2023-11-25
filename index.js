@@ -1,7 +1,6 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const employeeRoute = require("../backend/controller/employeeRoute");
-const leaveRoute = require("../backend/controller/leaveRoute");
 const cors= require("cors");
 const bodyParser= require("body-parser");
 
@@ -18,7 +17,6 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(cors());
 app.use("/employees",employeeRoute);
-app.use("/leaves",leaveRoute);
 
 
 app.listen(4000,()=>{
