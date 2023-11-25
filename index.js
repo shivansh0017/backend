@@ -1,6 +1,6 @@
 const express = require("express");
 const mongoose = require("mongoose");
-const employeeRoute = require("../backend/controller/employeeRoute.js");
+const employeeRoute = require("../backend/controller/employeeRoute");
 const cors= require("cors");
 const bodyParser= require("body-parser");
 
